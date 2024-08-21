@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Steppe-Book';
+    src: url('../public/assets/fonts/Steppe-Book.ttf');
+}
+
+@font-face {
+    font-family: 'Steppe-ExtraBold';
+    src: url('../public/assets/fonts/Steppe-ExtraBold.ttf');
+}
+
+body {
+    background-color: #5233F4;
+    font-family: 'Steppe-Book', sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: white;
+    border-radius: 60px;
+    width: 178px;
+    height: 58px;
+    box-sizing: border-box;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+    color: #5233F4;
+    border: 0;
+    cursor: pointer;
+}
+
+.violet_button {
+    background-color: #5233F4;
+    color: white;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    color: gray;
+    background-color: #343434;
+}
+
+.button:hover:not(:disabled){
+    background-color: #eeeeee;
+}
+
+.button.violet_button:hover:not(:disabled) {
+    background-color: #3b2cd8;
+} 
+.common-title {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 60px;
+    line-height: 100%;
+    text-align: center;
+}
